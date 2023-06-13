@@ -1,0 +1,16 @@
+{
+  "title": "How did I start this project?",
+  "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sapien et ligula ullamcorper malesuada proin libero nunc consequat. ",
+  "section": [
+    {
+      "title": "Face Recognition?",
+      "content": "How was face recognition used in this project? Click this link to check out!",
+      "icon": "notes.svg"
+    },
+    {
+      "title": "Building website?",
+      "content": "How did I make this website? Check my github as well!",
+      "icon": "notes.svg"
+    }
+  ]
+}
