@@ -128,31 +128,19 @@ const Footer = ({ t }: any) => {
       </FooterSection> */}
       <Extra>
         <Container border={true}>
-          <Row
-            justify="space-between"
-            align="middle"
-            style={{ paddingTop: "3rem" }}
-          >
-            <NavLink to="/">
+          <Row justify="center" align="middle" style={{ paddingTop: "3rem" }}>
+            {/* <NavLink to="/">
               <div
                 style={{
                   color: "#2E186A",
                   fontSize: "1rem",
                   textAlign: "center",
-                  // marginTop: "2rem",
                 }}
               >
                 Copyright Ⓒ 2023 Sit Straight. All Rights Reserved.
               </div>
-              {/* <LogoContainer>
-                <SvgIcon
-                  src="logo.svg"
-                  aria-label="homepage"
-                  width="101px"
-                  height="64px"
-                />
-              </LogoContainer> */}
-            </NavLink>
+            </NavLink> */}
+            {/*             
             <FooterContainer>
               <SocialLink
                 href="https://github.com/Adrinlol/create-react-app-adrinlol"
@@ -170,13 +158,8 @@ const Footer = ({ t }: any) => {
                 href="https://medium.com/@lashakakabadze/"
                 src="medium.svg"
               />
-              {/* <a href="https://www.buymeacoffee.com/adrinlol">
-                <img
-                  src="https://img.buymeacoffee.com/button-api/?text=Buy me a pizza&emoji=🍕&slug=adrinlol&button_colour=FF5F5F&font_colour=ffffff&font_family=Lato&outline_colour=000000&coffee_colour=FFDD00"
-                  alt="Buy me a pizza"
-                />
-              </a> */}
-            </FooterContainer>
+    
+            </FooterContainer> */}
           </Row>
         </Container>
       </Extra>

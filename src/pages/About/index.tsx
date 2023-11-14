@@ -44,13 +44,14 @@ const About = () => {
       <ContentBlock
         type="right"
         title={IntroContent.title}
-        content={Introduction.text}
+        content={IntroContent.text}
         button={Introduction.button}
         icon="developer.svg"
         id=""
       />
       {/* <div id="learnMore"></div> */}
-      <div style={{ height: "10vh", width: "20%" }} id="blank"></div>
+      {/* More About Me Section */}
+      {/* <div style={{ height: "10vh", width: "20%" }} id="blank"></div>
       <ContentBlock
         type="left"
         title={Introduction.title}
@@ -59,7 +60,7 @@ const About = () => {
         // section={IntroContent.section}
         icon="developer.svg"
         id="intro2"
-      />
+      /> */}
       {/* <div
         style={{
           fontSize: "2rem",

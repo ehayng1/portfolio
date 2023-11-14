@@ -43,11 +43,9 @@ export const ContactWrapper = styled("div")<any>`
 `;
 
 export const Burger = styled("div")`
-  @media only screen and (max-width: 890px) {
-    display: block;
+  @media only screen and (min-width: 890px) {
+    display: none;
   }
-
-  display: none;
 
   svg {
     fill: #2e186a;
@@ -100,5 +98,15 @@ export const Span = styled("span")`
     color: rgb(255, 130, 92);
     text-underline-position: under;
     text-decoration: rgb(255, 130, 92) wavy underline;
+  }
+`;
+
+export const MenuItems = styled.div`
+  display: flex;
+  flex-direction: row; // Default layout is row
+
+  @media only screen and (max-width: 767px) {
+    flex-direction: column; // Switch to column layout for small screens
+    gap: 2rem; // Add spacing between items
   }
 `;

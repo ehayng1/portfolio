@@ -16,6 +16,7 @@ import {
   Label,
   Outline,
   Span,
+  MenuItems,
 } from "./styles";
 
 const Header = ({ t }: any) => {
@@ -27,7 +28,7 @@ const Header = ({ t }: any) => {
     // Delay the header visibility to simulate gradual appearance
     const timer = setTimeout(() => {
       setHeaderVisible(true);
-    }, 2000);
+    }, 250);
 
     return () => clearTimeout(timer);
   }, []);
@@ -50,27 +51,49 @@ const Header = ({ t }: any) => {
     };
 
     return (
-      <div
+      <MenuItems
         style={{
           opacity: headerVisible ? 1 : 0,
           transition: "opacity 1s ease-in-out",
         }}
       >
         <HashLink to="/Home#intro">
-          <Span style={{ fontSize: "1.4rem", marginRight: "1rem" }}>
+          <Span
+            style={{
+              fontSize: "1.4rem",
+              marginRight: "1rem",
+              // fontFamily: "Motiva Sans Bold",
+            }}
+          >
             {t("Home")}
           </Span>
         </HashLink>
-        <HashLink to="/Home#overview">
-          <Span style={{ fontSize: "1.4rem", marginRight: "1rem" }}>
-            {t("Overview")}
+        <HashLink to="/Home#project">
+          <Span
+            style={{
+              fontSize: "1.4rem",
+              marginRight: "1rem",
+              // fontFamily: "Motiva Sans Bold",
+            }}
+          >
+            {t("Projects")}
           </Span>
         </HashLink>
-
-        <Link to="/about">
-          <Span style={{ fontSize: "1.4rem" }}>{t("About")}</Span>
-        </Link>
-      </div>
+        <HashLink to="/Home#work">
+          <Span
+            style={{
+              fontSize: "1.4rem",
+              marginRight: "1rem",
+              // fontFamily: "Motiva Sans Bold",
+            }}
+          >
+            {t("Work")}
+          </Span>
+        </HashLink>
+        <HashLink to="/Home#contact">
+          <Span style={{ fontSize: "1.4rem" }}>{t("Contact")}</Span>
+        </HashLink>
+      </MenuItems>
     );
   };
 
@@ -88,24 +111,27 @@ const Header = ({ t }: any) => {
       <Container>
         <Row justify="space-between">
           <LogoContainer to="/" aria-label="homepage">
-            <img
+            {/* Logo Image */}
+            {/* <img
               src="/img/icons/logo1.png"
               width="85px"
               height="85px"
               style={{ marginRight: "2rem" }}
               alt="Logo"
-            />
-            <div
+            /> */}
+            {/* Logo goes here */}
+            {/* <div
               style={{
                 color: "#2E186A",
-                fontSize: "2rem",
+                fontSize: "1.8rem",
                 textAlign: "center",
-                fontWeight: "bold",
+                fontFamily: "Motiva Sans Bold",
+
                 marginTop: "1rem",
               }}
             >
               Sit Straight
-            </div>
+            </div> */}
           </LogoContainer>
 
           <NotHidden>
@@ -121,9 +147,9 @@ const Header = ({ t }: any) => {
               <Col span={12}>
                 <Menu>Menu</Menu>
               </Col>
-              <Col span={12}>
+              {/* <Col span={12}>
                 <Outline />
-              </Col>
+              </Col> */}
             </Label>
           </Col>
           <MenuItem />

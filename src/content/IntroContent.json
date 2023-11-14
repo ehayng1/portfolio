@@ -1,6 +1,6 @@
 {
-  "title": "Who Am I?",
-  "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sapien et ligula ullamcorper malesuada proin libero nunc consequat. Id venenatis a condimentum vitae sapien. Et netus et malesuada fames ac turpis. Auctor eu augue ut lectus arcu bibendum at. Ultrices tincidunt arcu non sodales neque sodales ut etiam. ",
+  "title": "About me",
+  "text": "I am a software engineer speciallizing in building interesting applications and platform that solve real-world problems and provide users with an awesome experience. Here are a few technologies I’ve been working with recently -- React.js, React Native, Electron.js and Firebase. ",
   "button": [
     {
       "title": "Explore"
